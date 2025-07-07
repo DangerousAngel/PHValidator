@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #3f51b5; /* Deeper blue for primary elements */
-    --secondary-color: #e91e63; /* Accent color for gradients/highlights */
+    --primary-color: #1d1f28; 
+    --secondary-color: #4d484a; 
     --text-color-dark: #333;
     --text-color-light: #f8f8f8;
     --bg-light: #ffffff;
@@ -19,7 +19,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Updated gradient */
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); 
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@ a {
 }
 
 .btn {
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); /* Updated button gradient */
+    background: var(--primary-color); /* Updated button gradient */
     color: var(--text-color-light);
     border: none;
     border-radius: 8px;
