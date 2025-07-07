@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Phone Number Lookup</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="NumLook.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="card">
+            <header class="app-header">
+                <div class="logo-container">
+                    <svg class="app-logo" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <h1>Phone Number Validator</h1>
+                </div>
+                <p class="tagline">Efficiently validate and lookup phone number details.</p>
+            </header>
+            
+            <section class="search-section">
+                <div class="search-input-group">
+                    <input type="text" id="searchField" placeholder="Enter phone number (e.g., +12069220880)..." class="form-control">
+                    <button id="searchButton" class="btn btn-primary">
+                        <svg class="icon search-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                        <span>Validate</span>
+                    </button>
+                </div>
+            </section>
+            
+            <section class="results-section">
+                <div class="results-header">
+                    <h2>Validation Results</h2>
+                    <div class="results-count" id="resultsCount">0 results</div>
+                </div>
+                
+                <div class="table-responsive">
+                    <table id="resultsTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <footer class="app-footer">
+                <div class="status-bar" id="statusLabel">Ready to validate</div>
+                <div class="credit">Developed by <a href="https://github.com/Abodx9" class="text-link">Abod-X</a> and <a href="https://github.com/DangerousAngel" class="text-link">DangerousAngel</a></div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="scriptNumLookup.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+:root {
+    --primary-color: #3f51b5; /* Deeper blue for primary elements */
+    --secondary-color: #e91e63; /* Accent color for gradients/highlights */
+    --text-color-dark: #333;
+    --text-color-light: #f8f8f8;
+    --bg-light: #ffffff;
+    --bg-dark: #f0f2f5;
+    --border-color: #ddd;
+    --shadow-light: rgba(0, 0, 0, 0.08);
+    --transition-speed: 0.2s ease-in-out;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Updated gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--text-color-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* General Layout */
+.app-container {
+    width: 100%;
+    max-width: 900px; /* Slightly adjusted max-width for formality */
+}
+
+.card {
+    background: var(--bg-light);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px var(--shadow-light); /* More pronounced shadow */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Header */
+.app-header {
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.app-logo {
+    width: 55px;
+    height: 55px;
+    color: var(--primary-color); /* Color for the SVG logo */
+}
+
+.app-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.tagline {
+    color: #666;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Search Section */
+.search-section {
+    margin-bottom: 40px;
+}
+
+.search-input-group {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control {
+    flex: 1;
+    padding: 14px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px; /* Slightly less rounded */
+    font-size: 1rem;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.15);
+}
+
+.btn {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); /* Updated button gradient */
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 8px;
+    padding: 0 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Results Section */
+.results-section {
+    margin-bottom: 30px;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 5px; /* Add some padding for alignment */
+}
+
+.results-header h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.results-count {
+    background: var(--bg-dark);
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-light);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners apply to content */
+    box-shadow: 0 4px 15px var(--shadow-light);
+}
+
+.data-table th, .data-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+    background: var(--primary-color);
+    color: var(--text-color-light);
+    font-weight: 500;
+    position: sticky; /* Make header sticky for better UX with scroll */
+    top: 0;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+    background-color: var(--bg-dark);
+}
+
+/* Footer */
+.app-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 10px;
+}
+
+.status-bar {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.credit .text-link {
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: color var(--transition-speed);
+}
+
+.credit .text-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Loading animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .app-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+    }
+    
+    .search-input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        justify-content: center;
+        width: 100%;
+        padding: 14px;
+    }
+    
+    .data-table th, .data-table td {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .results-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .app-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    .app-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+}
