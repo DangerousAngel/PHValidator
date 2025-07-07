@@ -7,8 +7,6 @@ A clean and efficient web application for validating and looking up details of p
 ## Table of Contents
 - [About the Project](#about-the-project)
 - [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [API Key Setup](#api-key-setup)
   - [Running the Application](#running-the-application)
@@ -33,16 +31,9 @@ This project provides a simple, formal, and user-friendly interface to validate 
 - **Real-time Status Updates**: Provides feedback during search operations
 - **Error Handling**: Displays clear messages for API errors or invalid inputs
 
-## Getting Started
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-- A web browser (e.g., Chrome, Firefox, Edge)
-- A text editor (e.g., VS Code, Sublime Text)
-- A local web server (due to CORS policies)
-
 ### Installation
-1. Clone the repository:
+1.Go to Numlookupapi.com and sign up for an account
+2.Get your API key from the dashboard
+1. Replace with your actual API key in js file
 ```bash
-git clone https://github.com/your-username/phone-number-validator.git
-cd phone-number-validator
+const API_KEY = "YOUR_ACTUAL_API_KEY_HERE";
