@@ -7,13 +7,8 @@ A clean and efficient web application for validating and looking up details of p
 ## Table of Contents
 - [About the Project](#about-the-project)
 - [Features](#features)
-  - [Installation](#installation)
-  - [API Key Setup](#api-key-setup)
-  - [Running the Application](#running-the-application)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Credits](#credits)
-- [License](#license)
+- [Installation](#installation)
+
 
 ## About the Project
 This project provides a simple, formal, and user-friendly interface to validate phone numbers and retrieve associated details such as country, location, carrier, and line type. It leverages the Numlookupapi for its backend data. Designed with a clean aesthetic, it offers a professional tool for quick phone number information retrieval.
