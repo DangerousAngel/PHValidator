@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultsCount = document.getElementById('resultsCount');
     
     // --- IMPORTANT: Replace 'YOUR_ACTUAL_API_KEY_HERE' with your real Numlookupapi key ---
-    const API_KEY = "num_live_2chmFSEtwBY2m47j5xoSpvhyOT5b2tj1DtowkYCZ"; 
+    const API_KEY = "YOUR_ACTUAL_API_KEY_HERE"; 
     // Base URL for the /v1/validate/ endpoint
     const API_URL = "https://api.numlookupapi.com/v1/validate/"; 
     
