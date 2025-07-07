@@ -3,7 +3,6 @@
 A clean and efficient web application for validating and looking up details of phone numbers using the Numlookupapi.
 
 ![Phone Number Validator Screenshot](Phone+Number+Validator+Screenshot.png) 
-*(Consider adding an actual screenshot here)*
 
 ## Table of Contents
 - [About the Project](#about-the-project)
