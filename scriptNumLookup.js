@@ -3,10 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchButton = document.getElementById('searchButton');
     const resultsTable = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
     const statusLabel = document.getElementById('statusLabel');
-    const resultsCount = document.getElementById('resultsCount');
     
     // --- IMPORTANT: Replace 'YOUR_ACTUAL_API_KEY_HERE' with your real Numlookupapi key ---
-    const API_KEY = "YOUR_ACTUAL_API_KEY_HERE"; 
+    const API_KEY = "num_live_2chmFSEtwBY2m47j5xoSpvhyOT5b2tj1DtowkYCZ"; 
     // Base URL for the /v1/validate/ endpoint
     const API_URL = "https://api.numlookupapi.com/v1/validate/"; 
     
@@ -62,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
             cell.style.textAlign = "center";
             cell.style.padding = "20px";
             cell.style.color = "#666";
-            resultsCount.textContent = "0 results";
             return;
         }
         
@@ -89,8 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const value = data[field.key];
             row.insertCell(1).textContent = field.formatter ? field.formatter(value) : (value || "N/A");
         });
-        
-        resultsCount.textContent = "1 result"; 
+
     }
 
     /**
@@ -124,8 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cell.style.textAlign = "center";
             cell.style.padding = "20px";
             cell.style.color = "#d32f2f";
-            
-            resultsCount.textContent = "0 results";
+
         } finally {
             searchButton.disabled = false;
         }
