@@ -27,8 +27,8 @@ This project provides a simple, formal, and user-friendly interface to validate 
 - **Error Handling**: Displays clear messages for API errors or invalid inputs
 
 ### Installation
-- 1.Go to Numlookupapi.com and sign up for an account
-- 2.Get your API key from the dashboard
-- 3. Replace with your actual API key in js file
+- Go to Numlookupapi.com and sign up for an account
+- Get your API key from the dashboard
+- Replace with your actual API key in js file
 ```bash
 const API_KEY = "YOUR_ACTUAL_API_KEY_HERE";
